@@ -7,8 +7,8 @@
 
         {% if page_obj %}
           <div class="card-grid">
-            {% for i in page_obj %}
-              {% include 'blog/partials/_post-card.html' with i=forloop.counter0 %}
+            {% for post in page_obj %}
+              {% include 'blog/partials/_post-card.html'%}
             {% endfor %}
           </div>
         {% else %}
